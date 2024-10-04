@@ -39,21 +39,6 @@
 	text-align: center;
 }
 
-.btn {
-	padding: 1.75rem 1.5rem;
-	outline: none;
-	border: none;
-	font-size: 1rem;
-	color: var(--white);
-	background-color: var(--primary-color);
-	transition: 0.3s;
-	cursor: pointer;
-}
-
-.btn:hover {
-	background-color: var(--primary-color-dark);
-}
-
 .logo {
 	font-size: 2rem;
 	font-weight: 800;
@@ -190,6 +175,7 @@ nav {
 }
 
 .header__container .btn {
+	font-weight: 500;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -198,7 +184,10 @@ nav {
 	font-size: 20px;
 	border-radius: 100px;
 	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	color: var(--text-dark);
 }
+
 
 .about_me h2 {
 	margin-bottom: 2rem;
@@ -353,15 +342,15 @@ nav {
 	background-color: var(--primary-color-dark);
 }
 
-.footer__container {
-	display: grid;
-	gap: 4rem 2rem;
-}
-
 .footer__logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20px;
+}
+
+.footer p {
+	margin-top: 20px;
 }
 
 .footer__bar {
@@ -370,7 +359,13 @@ nav {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	margin-bottom: 40px;
+	width: 100%;
 }
 
 @media (width > 768px) {
@@ -460,7 +455,7 @@ textarea {
 	width: 100%;
 	padding: 0.5rem 1rem;
 	background-color: var(--primary-color);
-	color: #fff;
+	color: var(--extra-light);
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
@@ -484,5 +479,8 @@ textarea {
 	}
 	.left {
 		height: 200px;
+	}
+	.info {
+		width: 80%;
 	}
 }
