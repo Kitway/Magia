@@ -183,11 +183,10 @@ nav {
 	margin: 0 auto;
 	font-size: 20px;
 	border-radius: 100px;
-	font-family: 'Poppins', sans-serif;
 	text-align: center;
+	font-family: 'Merriweather', sans-serif;
 	color: var(--text-dark);
 }
-
 
 .about_me h2 {
 	margin-bottom: 2rem;
@@ -321,13 +320,13 @@ nav {
 	line-height: 1.5rem;
 }
 
-.client__card h4 {
+.client__card h3 {
 	font-size: 1.2rem;
 	font-weight: 600;
 	color: var(--text-dark);
 }
 
-.client__card h5 {
+.client__card h4 {
 	font-size: 1rem;
 	font-weight: 500;
 	font-family: var(--header-font);
@@ -340,6 +339,10 @@ nav {
 	align-items: center;
 	padding-block: 5rem;
 	background-color: var(--primary-color-dark);
+}
+
+.subscribe .btn {
+	color: var(--text-dark);
 }
 
 .footer__logo {
