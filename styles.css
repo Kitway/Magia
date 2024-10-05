@@ -306,8 +306,6 @@ nav {
 	text-align: center;
 	background-color: var(--primary-color);
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
-	
-	
 }
 
 .client__card img {
@@ -350,6 +348,23 @@ nav {
 	align-items: center;
 	padding-block: 5rem;
 	background-color: var(--primary-color-dark);
+}
+
+#image-track {
+	display: flex;
+	gap: 4vmin;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(0%, -50%);
+	user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+	width: 40vmin;
+	height: 56vmin;
+	object-fit: cover;
+	object-position: 100% center;
 }
 
 .field::placeholder {
