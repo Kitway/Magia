@@ -6,7 +6,7 @@
 	--primary-color-dark: #326647;
 	--text-dark: #12110f;
 	--text-light: #6b7280;
-	--extra-light: #fbf7f6;
+	--extra-light: #fff69b;
 	--white: #ffffff;
 	--max-width: 1200px;
 	--header-font: 'Merriweather', serif;
@@ -50,7 +50,7 @@
 .logo {
 	font-size: 2.5rem;
 	font-weight: bolder;
-	color: var(--primary-color);
+	color: var(--primary-color-dark);
 	display: flex;
 	gap: 10px;
 }
@@ -80,6 +80,7 @@ ul {
 html,
 body {
 	scroll-behavior: smooth;
+	font-size: 110%;
 }
 
 body {
@@ -138,7 +139,7 @@ nav {
 	font-family: var(--header-font);
 	font-weight: 800;
 	white-space: nowrap;
-	color: var(--text-light);
+	color: var(--text-dark);
 }
 
 .nav__links a:hover {
@@ -174,7 +175,7 @@ nav {
 	margin-bottom: 4rem;
 	font-size: 1.5rem;
 	font-family: var(--header-font);
-	font-weight: lighter;
+	font-weight: bold;
 	color: var(--white);
 	display: flex;
 	justify-content: center;
@@ -303,8 +304,10 @@ nav {
 .client__card {
 	padding: 2rem 1rem;
 	text-align: center;
-	background-color: var(--white);
+	background-color: var(--primary-color);
 	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+	
+	
 }
 
 .client__card img {
@@ -319,7 +322,7 @@ nav {
 	display: inline-block;
 	margin-bottom: 1rem;
 	font-size: 3rem;
-	color: var(--primary-color);
+	color: var(--primary-color-dark);
 }
 
 .client__card p {
@@ -364,17 +367,11 @@ nav {
 	margin: 2rem;
 }
 
-
 .footer-img img {
 	width: 10vw;
 	margin: 0 auto;
-	border-radius: 50%;
-	box-shadow: 0 0 25px var(--primary-color);
+	border-radius: 100%;
 	transition: 0.4s ease-in-out;
-}
-
-.footer-img img:hover {
-	box-shadow: 0 0 25 px var(--primary-color), 0 0 50px var(--primary-color), 0 0 100px var(--primary-color);
 }
 
 .footer p {
@@ -393,7 +390,8 @@ nav {
 
 .footer__bar .mail {
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 18px;
+	font-family: var(--header-font);
 }
 
 .footer__bar .copyright {
@@ -466,7 +464,7 @@ h2:after {
 	height: 4px;
 	width: 50px;
 	border-radius: 2px;
-	background-color: var(--primary-color);
+	background-color: var(--primary-color-dark);
 }
 
 .field {
