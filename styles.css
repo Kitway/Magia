@@ -151,7 +151,7 @@ nav {
 .header {
 	padding-block: 5rem;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('assets/header.jpg');
+		url('assets/header.avif');
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -226,24 +226,6 @@ nav {
 	left: -2%;
 	animation: spin 5s linear infinite;
 }
-
-/* .item::after {
-	position: absolute;
-	content: '';
-	top: calc(var(--item-height) / 6);
-	left: 0;
-	right: 0;
-	z-index: -1;
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	transform: scale(0.8);
-	filter: blur(calc(var(--item-height) / 6));
-	background-image: linear-gradient(var(--rotate), #ffd700, #325547, #fff69b);
-	opacity: 1;
-	transition: opacity 0.5s;
-	animation: spin 2.25s linear infinite;
-} */
 
 @keyframes spin {
 	0% {
