@@ -55,6 +55,16 @@
 	color: var(--primary-color-dark);
 	display: flex;
 	gap: 10px;
+	position: relative;
+}
+
+.star {
+	position: absolute;
+	font-size: 0.4em;
+	top: 10%;
+	left: 80%;
+	transform: translate(-50%);
+	z-index: 100;
 }
 
 .logo span {
@@ -245,11 +255,19 @@ nav {
 	background-color: var(--primary-color-dark);
 }
 
+.banner__header {
+	margin-top: 30px;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+}
+
 .banner .slider {
 	position: absolute;
 	width: 200px;
 	height: 240px;
-	top: 20%;
+	top: 25%;
 	left: calc(50% - 100px);
 	transform-style: preserve-3d;
 	transform: perspective(1000px);
@@ -298,8 +316,8 @@ nav {
 	right: 0;
 	left: 0;
 	padding: 80px 30px;
-	background-color: rgba(0, 0, 0, 0.85);
-	color: #fff;
+	background-color: var(--primary-color);
+	color: var(--primary-color-dark);
 	clip-path: circle(0 at 50% 90%);
 	transition: clip-path 0.8s;
 	font-size: 14px;
@@ -365,6 +383,7 @@ nav {
 		width: 100px;
 		height: 150px;
 		left: calc(50% - 50px);
+		top: 40%;
 	}
 
 	.banner .slider .item {
@@ -555,6 +574,18 @@ h2:after {
 	width: 50px;
 	border-radius: 2px;
 	background-color: var(--primary-color-dark);
+}
+
+.banner__header:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 50px;
+	border-radius: 2px;
+	background-color: var(--primary-color);
 }
 
 .field {
