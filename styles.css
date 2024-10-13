@@ -58,13 +58,26 @@
 	position: relative;
 }
 
-.star {
+.star__one,
+.star__two,
+.star__three {
 	position: absolute;
-	font-size: 0.4em;
-	top: 10%;
-	left: 80%;
+	font-size: 15px;
+	bottom: 24px;
 	transform: translate(-50%);
 	z-index: 100;
+}
+
+.star__one {
+	left: 37.5%;
+}
+
+.star__two {
+	left: 95%;
+}
+
+.star__three {
+	left: 99.5%;
 }
 
 .logo span {
@@ -77,7 +90,6 @@
 
 img {
 	display: flex;
-	width: 100%;
 }
 
 a {
@@ -308,13 +320,13 @@ nav {
 .question {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
+	text-align: center;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	padding: 80px 30px;
 	background-color: var(--primary-color);
 	color: var(--primary-color-dark);
 	clip-path: circle(0 at 50% 90%);
@@ -354,12 +366,13 @@ nav {
 
 @media screen and (max-width: 1024px) {
 	.banner {
-		height: 70vh;
+		height: 50vh;
 	}
 
 	.banner .slider {
-		width: 160px;
-		height: 200px;
+		margin-top: 5%;
+		width: 150px;
+		height: 300px;
 		left: calc(50% - 80px);
 	}
 	.banner .slider .item {
@@ -375,14 +388,15 @@ nav {
 
 @media screen and (max-width: 768px) {
 	.banner {
-		height: 40vh;
+		height: 50vh;
 	}
 
 	.banner .slider {
+
 		width: 100px;
-		height: 150px;
+		height: 200px;
 		left: calc(50% - 50px);
-		top: 40%;
+		top: 25%;
 	}
 
 	.banner .slider .item {
@@ -463,7 +477,6 @@ nav {
 .field::placeholder {
 	color: var(--text-dark);
 }
-
 
 .subscribe .btn {
 	color: var(--text-dark);
@@ -555,7 +568,6 @@ nav {
 }
 
 .right {
-	
 	padding: 25px 40px;
 	border: 2px solid var(--primary-color);
 }
