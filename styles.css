@@ -366,9 +366,8 @@ nav {
 
 @media screen and (max-width: 1024px) {
 	.banner {
-		height: 50vh;
+		height: 700px;
 	}
-
 	.banner .slider {
 		margin-top: 5%;
 		width: 150px;
@@ -386,13 +385,24 @@ nav {
 	}
 }
 
+@media screen and (max-width: 880px) {
+	.contact-box {
+		grid-template-columns: 1fr;
+	}
+	.left {
+		height: 200px;
+	}
+	.info {
+		width: 80%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.banner {
-		height: 50vh;
+		height: 500px;
 	}
 
 	.banner .slider {
-
 		width: 100px;
 		height: 200px;
 		left: calc(50% - 50px);
@@ -611,6 +621,7 @@ h2:after {
 	font-size: 1.1rem;
 	margin-bottom: 22px;
 	transition: 0.3s;
+	font-family: var(--header-font);
 }
 
 .field:hover {
@@ -643,14 +654,67 @@ textarea {
 	background-color: #fff;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 415px) {
+	html {
+		overflow-x: hidden;
+	}
+
+	.logo {
+		font-size: 2rem;
+	}
+
+	.star__one,
+	.star__two,
+	.star__three {
+		font-size: 12px;
+		margin-bottom: -4px;
+	}
+
+	.header__container h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+
+	.header__container p {
+		font-size: 1rem;
+	}
+
+	.header__container .btn {
+		font-size: 1rem;
+		font-weight: 900;
+		width: 80vw;
+	}
+
+	.banner {
+		height: 400px;
+	}
+
+	.banner__header {
+		font-size: 2.5rem;
+	}
+
+	.banner .slider {
+		width: 100px;
+		height: 180px;
+		left: calc(50% - 50px);
+		margin-top: 20%;
+	}
+
+	.slider__box {
+		transform: scale(0.8);
+	}
+
 	.contact-box {
-		grid-template-columns: 1fr;
+		width: 100vw;
 	}
-	.left {
-		height: 200px;
+
+	.contact-box input,
+	.contact-box textarea {
+		font-size: 14px;
+		font-weight: bold;
 	}
-	.info {
-		width: 80%;
+
+	.footer-img img {
+		width: 30vw;
 	}
 }
