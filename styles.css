@@ -385,18 +385,6 @@ nav {
 	}
 }
 
-@media screen and (max-width: 880px) {
-	.contact-box {
-		grid-template-columns: 1fr;
-	}
-	.left {
-		height: 200px;
-	}
-	.info {
-		width: 80%;
-	}
-}
-
 @media screen and (max-width: 768px) {
 	.banner {
 		height: 500px;
@@ -507,7 +495,8 @@ nav {
 }
 
 .footer p {
-	margin-top: 20px;
+	margin: 1rem;
+	width: 50vw;
 }
 
 .footer__bar {
@@ -530,9 +519,8 @@ nav {
 	font-weight: bold;
 }
 
-.info {
-	margin-bottom: 40px;
-	width: 100%;
+.footer__bar .info {
+	width: 80vw;
 }
 
 @media (width > 768px) {
@@ -654,7 +642,7 @@ textarea {
 	background-color: #fff;
 }
 
-@media screen and (max-width: 415px) {
+@media (width < 415px) {
 	html {
 		overflow-x: hidden;
 	}
@@ -716,5 +704,21 @@ textarea {
 
 	.footer-img img {
 		width: 30vw;
+	}
+
+	.footer__bar .mail {
+		font-size: 0.9rem;
+	}
+
+	.footer__bar .mail, .footer__bar .copyright {
+		width: 100vw;
+	}
+
+	.footer__bar .info {
+		width: 80vw;
+	}
+
+	.footer__bar .copyright, .footer__bar .info {
+		font-size: 0.8rem;
 	}
 }
